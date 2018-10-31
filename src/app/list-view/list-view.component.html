@@ -1,0 +1,22 @@
+<p>
+  list of Todos:
+</p>
+  <table>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Description</td>
+    </tr>
+    <tr *ngFor="let t of todos">
+      <td>        
+        <a routerLink="/todo/{{t._id}}">{{ t._id }}</a>
+      </td>
+      <td>
+        {{ t.name }}
+      </td>
+      <td>
+        {{ t.description }}
+      </td>        
+    </tr>
+  </table>
+

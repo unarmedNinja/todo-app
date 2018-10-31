@@ -1,0 +1,19 @@
+<p>
+  todo works!  
+  
+</p>
+<div *ngIf="todo">    
+    <label>ID:
+    <span>{{ todo._id }}</span> 
+    </label>
+
+    <label>Name:
+      <input [(ngModel)]="todo.name" placeholder="name"/>
+    </label>
+
+    <label>Description:
+      <input [(ngModel)]="todo.description" placeholder="description"/>
+    </label>
+
+    <button (click)="updateTodo()">Update</button>
+</div>
